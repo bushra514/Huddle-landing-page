@@ -33,9 +33,7 @@ body{
     background-color: var(--clr-violet);
     background-image: url(/images/bg-desktop.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 100svh;
-    padding: 1rem;
+    background-size: cover;
     color: #fff;
     line-height: 1.5;
 }
@@ -46,16 +44,20 @@ body{
 .logo{
     width: 12rem;
     margin-left: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 /* header end */
 
 
 
 /* main */
+main{
+    padding: 1rem;
+}
 
-
-
+.main-container{
+    margin: 2rem 2rem 0 2rem;
+}
 
 .illustration__img{
     display: block;
@@ -63,7 +65,7 @@ body{
 }
 
 .description{
-    padding: 3rem;
+    padding: 0 3rem;
 }
 .heading{
     font-family: var(--ff-poppins);
@@ -94,18 +96,25 @@ body{
 /* footer */
 
 footer{
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
 }
 
 .icon__container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
     margin-right: 8rem;
 }
 
-.icons{
-    border: #fff;
-    border-radius: 50px;
-    padding: 0 1rem;
+.fa-brands{
+    border: 1px solid #fff;
+    border-radius:  60px;
+    padding: 0.6rem;
+
 }
+
+
 
 /* footer end */
 
@@ -130,7 +139,7 @@ footer{
     
     }
 
-    .container{
+    .main-container{
         flex-direction: column;
         text-align: center;
         
@@ -158,8 +167,8 @@ footer{
     }
     .icon__container{
         margin-right: 0;
+        justify-content: center;
     }
-    
-    
+
     
 }
